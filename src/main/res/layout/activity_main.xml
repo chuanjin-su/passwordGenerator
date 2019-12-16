@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Generate"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toTopOf="@id/buttonClear"
         app:layout_constraintEnd_toEndOf="@+id/buttonClear"
         app:layout_constraintStart_toStartOf="@+id/buttonClear" />
@@ -69,7 +69,7 @@
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="Password Here!"
         android:textAllCaps="false"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -84,22 +84,48 @@
         android:layout_height="51dp"
         android:ems="10"
         android:inputType="number"
-        android:text="2"
+        android:text="8"
         app:layout_constraintBottom_toBottomOf="@+id/buttonClear"
         app:layout_constraintEnd_toStartOf="@+id/buttonGenerate"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.839"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/buttonGenerate"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
         android:id="@+id/buttonList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="List"
+        android:layout_marginTop="5dp"
+        android:text="My Logs"
         app:layout_constraintEnd_toEndOf="@+id/buttonClear"
         app:layout_constraintStart_toStartOf="@+id/buttonClear"
         app:layout_constraintTop_toBottomOf="@+id/buttonClear" />
+
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Read Help"
+        app:layout_constraintEnd_toEndOf="@+id/buttonClear"
+        app:layout_constraintStart_toStartOf="@+id/buttonClear"
+        app:layout_constraintTop_toBottomOf="@+id/buttonList" />
+
+    <TextView
+        android:id="@+id/textViewMinimumLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum length:"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editNum"
+        app:layout_constraintEnd_toStartOf="@+id/editNum"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editNum"
+        app:layout_constraintVertical_bias="0.437"
+        tools:text="Minimum Length:" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
