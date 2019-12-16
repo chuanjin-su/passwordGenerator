@@ -1,8 +1,6 @@
 package com.chuanjinsu.passwdgenerator;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
